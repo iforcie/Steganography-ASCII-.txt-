@@ -58,7 +58,7 @@ def encode(toEncodeName, textName):
 
 		encoded.write(symbolFromText)
 
-	# encoded.write(textFile.read())
+	encoded.write(textFile.read())
 			
 	toEncodeFile.close()
 	textFile.close()
@@ -128,7 +128,7 @@ def start():
 
 			print("Your message has encrypted and encoded")
 		elif choice is 2:
-			keyForDecode = int(input("How long is encoded message: "))
+			keyForDecode = int(input("How long was secret message: "))
 
 			keyForDecrypt = int(input("What was the key for encryption: "))
 
